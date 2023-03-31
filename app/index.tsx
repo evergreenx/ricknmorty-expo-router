@@ -1,4 +1,4 @@
-import { View, Text, Image, ViewStyle } from "react-native";
+import { View, Image, ViewStyle } from "react-native";
 import React from "react";
 
 const Index = () => {
@@ -23,5 +23,5 @@ export default Index;
 const $ViewStyle: ViewStyle = {
   flex: 1,
   padding: 20,
-  backgroundColor: "#fff",
+  backgroundColor: "#FFDEAD",
 };
