@@ -5,7 +5,7 @@ This repository serves as code for my technical blog about using Expo Router wit
 ## Getting Started
 
 To get started with this project, you'll need to have Node.js installed on your machine. You'll also need to have the Expo CLI installed. If you don't have it yet, you can install it by running: `npm install -g expo-cli`
-Once you have the Expo CLI installed, you can clone this repository and install the dependencies by running:
+Once you have the Expo CLI installed, you can clone this repository and install the dependencies by running:\
 `git clone https://github.com/evergreenx/ricknmorty-expo-router` \
 `cd expo-router-rick-and-morty` \
 `npm install`
@@ -45,7 +45,7 @@ README.md: The documentation file for the app.
 [Expo Documentation](https://docs.expo.dev/) \
 [Expo Router Documentation](https://expo.github.io/router/)\
 [Rick and Morty API Documentation](https://rickandmortyapi.com/documentation)\
-[apisauce Documentation](https://github.com/infinitered/apisauce)\
+[apisauce Documentation](https://github.com/infinitered/apisauce)
 
 ## Conclusion
 
