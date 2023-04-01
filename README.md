@@ -29,7 +29,7 @@ Folder Structure
 ├── interface.ts\
 ├── app.json\
 ├── package.json\
-└── README.md\
+└── README.md
 
 api.js: Contains the code for fetching data from the Rick and Morty API using apisauce.
 components: Contains the reusable components used in the app.
