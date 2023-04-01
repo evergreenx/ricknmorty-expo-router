@@ -29,16 +29,7 @@ const Index = () => {
 
   return (
     <View style={$container}>
-      <View>
-        <Image
-          source={{
-            uri: "https://res.cloudinary.com/evergreenx/image/upload/v1680259111/Logo_1_tdttqu.png",
-          }}
-          resizeMode="contain"
-          alt="logo"
-          style={{ width: 300, height: 200, alignSelf: "center" }}
-        />
-      </View>
+      
 
       {loading && (
         <Image

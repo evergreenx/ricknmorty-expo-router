@@ -8,6 +8,7 @@ import {
 } from "react-native";
 import React from "react";
 import { Character } from "../interface";
+import { Link } from "expo-router";
 type CharacterCardProps = {
   characters: Character[];
 };
@@ -38,15 +39,31 @@ export default function characterCard({ characters }: CharacterCardProps) {
     );
   };
 
+  const renderHeader = () => {
+    return (
+      <View>
+        <Image
+          source={{
+            uri: "https://res.cloudinary.com/evergreenx/image/upload/v1680259111/Logo_1_tdttqu.png",
+          }}
+          style={{ width: 300, height: 200, alignSelf: "center" }}
+          resizeMode="contain"
+          alt="logo"
+        />
+      </View>
+    );
+  };
+
   return (
     <View style={$container}>
       <FlatList
-        style={{ width: "100%", padding: 10 }}
+        style={{ width: "100%", padding: 10, marginBottom: 20 }}
         data={characters}
         renderItem={renderCharacters}
         keyExtractor={(item) => item.id.toString()}
         showsVerticalScrollIndicator={false}
         numColumns={2}
+        ListHeaderComponent={renderHeader}
       />
     </View>
   );
