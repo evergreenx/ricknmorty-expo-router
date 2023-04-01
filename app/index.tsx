@@ -2,7 +2,7 @@ import { View, Image, ViewStyle, Text, TextStyle } from "react-native";
 import React, { useEffect, useState } from "react";
 import { getCharacters } from "../api";
 import { Character } from "../interface";
-import CharacterCard from "../component/characterCard";
+import CharacterCard from "../component/CharacterCard";
 
 const Index = () => {
   const [characters, setCharacters] = useState<Character[]>([]);

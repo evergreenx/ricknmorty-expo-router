@@ -1,36 +1,51 @@
-# TypeScript Example
+# Using Expo Router with the Rick and Morty API
+This repository serves as code for my technical blog about using Expo Router with the Rick and Morty API. In this project, we will be using Expo to create a mobile application that consumes the Rick and Morty API using apisauce. We will be using Expo Router to create a navigation system for our application.
 
-<p>
-  <!-- iOS -->
-  <img alt="Supports Expo iOS" longdesc="Supports Expo iOS" src="https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff" />
-  <!-- Android -->
-  <img alt="Supports Expo Android" longdesc="Supports Expo Android" src="https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff" />
-  <!-- Web -->
-  <img alt="Supports Expo Web" longdesc="Supports Expo Web" src="https://img.shields.io/badge/web-4630EB.svg?style=flat-square&logo=GOOGLE-CHROME&labelColor=4285F4&logoColor=fff" />
-</p>
+## Getting Started
+To get started with this project, you'll need to have Node.js installed on your machine. You'll also need to have the Expo CLI installed. If you don't have it yet, you can install it by running: `npm install -g expo-cli`
+Once you have the Expo CLI installed, you can clone this repository and install the dependencies by running: 
+`git clone https://github.com/<your-github-username>/expo-router-rick-and-morty.git`\
+`cd expo-router-rick-and-morty`\
+`npm install`
 
-```sh
-npx create-react-native-app -t with-typescript
-```
+## Running the App
+To run the app, you'll need to start the Expo development server. You can do this by running:
 
-TypeScript is a superset of JavaScript which gives you static types and powerful tooling in Visual Studio Code including autocompletion and useful inline warnings for type errors.
+`npx expo start`
+This will start the development server and open the Expo DevTools in your browser. You can then run the app on an Android or iOS device or simulator by scanning the QR code in the Expo app on your device or by typing a for Android or i for iOS in the terminal.
 
-## 🚀 How to use
+Folder Structure
 
-#### Creating a new project
+├── api.ts\
+├── components\
+│   ├── CharacterCard.tsx\
+│   ├── CharacterDetail.tsx\
+├── app\
+│   └── index.ts\
+├── index.ts\
+├── interface.ts\
+├── app.json\
+├── package.json\
+└── README.md\
 
-- Install the CLI: `npm i -g expo-cli`
-- Create a project: `npx create-react-native-app -t with-typescript`
-- `cd` into the project
 
-### Adding TypeScript to existing projects
+api.js: Contains the code for fetching data from the Rick and Morty API using apisauce.
+components: Contains the reusable components used in the app.
+app: Contains the code for the screens in the app using Expo Router.
+index.ts : entry point for our app.
+interface.ts : interface for API response 
+app.json: The configuration file for the app.
+package.json: The package file for the app.
+README.md: The documentation file for the app.
 
-- Create a blank TypeScript config: `touch tsconfig.json`
-- Run `yarn start` or `npm run start` to automatically configure TypeScript
-- Rename files to TypeScript, `.tsx` for React components and `.ts` for plain typescript files
 
-> 💡 You can disable the TypeScript setup in Expo CLI with the environment variable `EXPO_NO_TYPESCRIPT_SETUP=1 expo start`
+## Resources
+[Expo Documentation](https://docs.expo.dev/) \
+[Expo Router Documentation](https://expo.github.io/router/)\
+[Rick and Morty API Documentation](https://rickandmortyapi.com/documentation)\
+[apisauce Documentation](https://github.com/infinitered/apisauce)\
 
-## 📝 Notes
+## Conclusion
+In this project, we've seen how to use Expo Router to create a navigation system for our mobile application. We've also seen how to consume the Rick and Morty API using apisauce. By combining these tools, we can create a fully-functional mobile app that allows us to browse characters from the Rick and Morty verse.
 
-- [Expo TypeScript guide](https://docs.expo.dev/versions/latest/guides/typescript/)
+I hope this has been helpful, and happy coding!
