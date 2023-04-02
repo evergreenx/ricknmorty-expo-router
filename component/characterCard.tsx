@@ -5,18 +5,29 @@ import {
   TextStyle,
   ViewStyle,
   Image,
+  Pressable,
 } from "react-native";
 import React from "react";
 import { Character } from "../interface";
-import { Link } from "expo-router";
+
+import { useRouter } from "expo-router";
 type CharacterCardProps = {
   characters: Character[];
 };
 
 export default function characterCard({ characters }: CharacterCardProps) {
+  const router = useRouter();
   const renderCharacters = ({ item }: { item: Character }) => {
     return (
-      <View style={$characterContainer}>
+      <Pressable
+        style={$characterContainer}
+        onPress={() => {
+          router.push({
+            pathname: "details/id/",
+            params: { id: item?.id },
+          });
+        }}
+      >
         <View style={$characterImageContainer}>
           <Image
             source={{ uri: item?.image }}
@@ -27,7 +38,6 @@ export default function characterCard({ characters }: CharacterCardProps) {
               borderBottomRightRadius: 0,
               borderRadius: 10,
             }}
-            resizeMode="cover"
           />
         </View>
 
@@ -35,7 +45,7 @@ export default function characterCard({ characters }: CharacterCardProps) {
           <Text style={$characterText}>{item?.name}</Text>
           <Text style={$characterSpecies}>{item?.species}</Text>
         </View>
-      </View>
+      </Pressable>
     );
   };
 
