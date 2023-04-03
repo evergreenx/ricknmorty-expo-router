@@ -4,11 +4,14 @@ This repository serves as code for my technical blog about using Expo Router wit
 
 ## Getting Started
 
-To get started with this project, you'll need to have Node.js installed on your machine. You'll also need to have the Expo CLI installed. If you don't have it yet, you can install it by running: `npm install -g expo-cli`
-Once you have the Expo CLI installed, you can clone this repository and install the dependencies by running:\
+To get started with this project, you'll need to have Node.js installed on your machine.follow instruction to .follow instruction to using [Expo CLI ](https://docs.expo.dev/get-started/installation/) 
+clone this repository and install the dependencies by running:\
 `git clone https://github.com/evergreenx/ricknmorty-expo-router` \
 `cd expo-router-rick-and-morty` \
 `npm install`
+
+## Preview 
+![](https://res.cloudinary.com/evergreenx/image/upload/v1680485358/ezgif.com-optimize_2_sobg6l.gif)
 
 ## Running the App
 
@@ -24,7 +27,7 @@ Folder Structure
 │ ├── CharacterCard.tsx\
 │ ├── CharacterDetail.tsx\
 ├── app\
-│ └── index.ts\
+│ ├── index.tsx\
 ├── index.ts\
 ├── interface.ts\
 ├── app.json\
