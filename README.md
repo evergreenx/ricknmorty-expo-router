@@ -2,6 +2,8 @@
 
 This repository serves as code for my technical blog about using Expo Router with the Rick and Morty API. In this project, we will be using Expo to create a mobile application that consumes the Rick and Morty API using apisauce. We will be using Expo Router to create a navigation system for our application.
 
+here is link to the [article](https://blog.idoevergreen.xyz/routing-in-expo-expo-router)
+
 ## Getting Started
 
 To get started with this project, you'll need to have Node.js installed on your machine.follow instruction to .follow instruction to using [Expo CLI ](https://docs.expo.dev/get-started/installation/) 
